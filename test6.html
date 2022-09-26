@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width" initial-scale=1">
+   <title>json 실습</title>
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+   <script>
+      $(document).ready(()=>{
+        let hong = ["홍성우", 36, 179, 90, "sungu07@naver.com","O"];
+
+        let hongjson = {
+         name : "홍성우",
+         age : 36,
+         height : 179,
+         weight : 90,
+         email : "sungu07@naver.com",
+         type : "0",
+
+       };
+
+         let userList =[
+          {name:"홍성우",age:19,type:"O"},
+          {name:"이개똥",age:30,type:"AB"},
+          {name:"윤지요",age:28,type:"O"},
+          {name:"김수라",age:38,type:"O"},
+          {name:"이사규",age:30,type:"B"},
+          {name:"유가유",age:25,type:"A"}
+
+        ];
+
+         for(i=0;i<6;i++){
+         $("userList").append("<div>"+userList["name"]+"</div>")
+       };
+      });
+
+
+     </script>
+
+
+
+   </head>
+
+   <body>
+     <div id="userList">
+
+     </div>
+     </body>
+</html>
